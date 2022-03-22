@@ -1,0 +1,357 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Home Learning Task 2.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Task 1\n",
+        "\n",
+        "The program that does the following:\n",
+        "\n",
+        "a) Stores a random number (1 to 10) in a variable see hint below.\n",
+        "\n",
+        "b) Asks a user for their name and stores this in a variable.\n",
+        "\n",
+        "c) Asks a user to guess the number between 1 and 10.\n",
+        "\n",
+        "d) Tells the user whether they have guessed correctly."
+      ],
+      "metadata": {
+        "id": "5pMfD4CnGv5T"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "t3w_FQgN56gK",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f124b01b-6759-47bc-d397-b942c78815e0"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "What is your name? a\n",
+            "Hello a can you guess a number from 1 to 10?\n",
+            " 1\n",
+            "guess again?\n",
+            " 2\n",
+            "again?\n",
+            " 4\n",
+            "Play guess the number again\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Task 1\n",
+        "\n",
+        "import random\n",
+        "number = random.randint(1,10)\n",
+        "#print(number)\n",
+        "\n",
+        "user_input = input(\"What is your name? \")\n",
+        "print(\"Hello\", user_input, \"can you guess a number from 1 to 10?\")\n",
+        "\n",
+        "user_input_number1 = int(input(\" \"))\n",
+        "if user_input_number1 == number:\n",
+        "  print(\"It took you one turn to guess my number, which was\", number)\n",
+        "elif user_input_number1 == 0:\n",
+        "  print(\"Play guess the number again\")\n",
+        "else:\n",
+        "  user_input_number1 != number\n",
+        "  print(\"guess again?\")\n",
+        "\n",
+        "user_input_number2 = int(input(\" \"))\n",
+        "if user_input_number2 == number:\n",
+        "  print(\"It took you two turns to guess my number, which was\", number)\n",
+        "elif user_input_number1 == 0:\n",
+        "  print(\"Play guess the number again\")\n",
+        "else:\n",
+        "  user_input_number2 != number\n",
+        "  print(\"again?\")\n",
+        "\n",
+        "user_input_number3 = int(input(\" \"))\n",
+        "if user_input_number3 == number:\n",
+        "  print(\"It took you three turns to guess my number, which was\", number)\n",
+        "else:\n",
+        "    print(\"Play guess the number again\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Task 2\n",
+        "\n",
+        "Write a program that asks a user for their favourite number between 1 and 100 and then tells them a joke based on the number. \n",
+        "\n",
+        "You should use a minimum of 3 jokes."
+      ],
+      "metadata": {
+        "id": "FQF7cm9ZTEFa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 2\n",
+        "\n",
+        "user_input = input(\"What is your name? \")\n",
+        "name = user_input\n",
+        "print(\"Hello\", name + \"!\" , \"what is your favourite number between 1 and 100?\")\n",
+        "\n",
+        "user_input_number = int(input(\"\"))\n",
+        "number = user_input_number\n",
+        "\n",
+        "if number <= 33:\n",
+        "  print(\"The best Number jokes you can count on\", number, \"...\")\n",
+        "  print(\"What are the ten things that can always be count on? Our fingers.\")\n",
+        "elif number <= 66:\n",
+        "  print(\"The best Number jokes you can count on\", number, \"...\")\n",
+        "  print(\"Are any monsters good at mathematics? No, unless you Count Dracula.\")\n",
+        "elif number <= 99:\n",
+        "  print(\"The best Number jokes you can count on\", number, \"...\")\n",
+        "  print(\"What are the three kinds of people in the world? There are those who know how to count and those who cannot.\")\n",
+        "else:\n",
+        "  print(\"The best Number jokes you can count on\", number, \"...\")\n",
+        "  print(\"The joke is on you!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5yu4azFqTNPo",
+        "outputId": "7b3a1073-c9ed-43de-933d-d6aae0dbacc7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your name? 100\n",
+            "Hello 100! what is your favourite number between 1 and 100?\n",
+            "100\n",
+            "The best Number jokes you can count on 100 ...\n",
+            "The joke is on you!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Task 3\n",
+        "\n",
+        "Write a program that allows user to enter their favourite starter, main course dessert and drink.\n",
+        "\n",
+        "Concatenate these and output a message which says––“Your favourite meal is………with a glass of….”"
+      ],
+      "metadata": {
+        "id": "n1a4svAxl3aw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 3\n",
+        "\n",
+        "user_input = input(\"What is your name? \")\n",
+        "name = user_input\n",
+        "print(\"Hello\", name + \"!\" , \"what is your favourite starter, main course, dessert and drink.\")\n",
+        "\n",
+        "user_input_starter = input(\"\")\n",
+        "user_input_main_course = input(\"\")\n",
+        "user_input_dessert = input(\"\")\n",
+        "user_input_drink = input(\"\")\n",
+        "\n",
+        "starter = user_input_starter\n",
+        "main = user_input_main_course\n",
+        "dessert = user_input_dessert\n",
+        "drink = user_input_drink\n",
+        "print(\"Your favourite meal is\", starter + \" for starter,\", main + \" for main, and\", dessert + \" for dessert\", \"……… with a glass of\", drink + \"!\")"
+      ],
+      "metadata": {
+        "id": "eCMZY5Fqmr8e"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Task 4\n",
+        "\n",
+        "A motorbike costs £2000 and loses 10% of its value every year. \n",
+        "\n",
+        "Using a loop, print the value of the bike every following year until it falls below £1000."
+      ],
+      "metadata": {
+        "id": "yH8bMGFeuMNO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 4\n",
+        "\n",
+        "i = 2000\n",
+        "\n",
+        "while i > 1000 * 0.9: #until it falls below £1000\n",
+        "  print(\"The value of a motorbike costs £2000 and loses 10% of its value every year equal to\", i)\n",
+        "  i = i * 0.9         # depreciation formula\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eLpAND46vDtz",
+        "outputId": "0598da2b-fd08-4b26-86f3-05cb575fed68"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The value of a motorbike costs £2000 and loses 10% of its value every year equal to 2000\n",
+            "The value of a motorbike costs £2000 and loses 10% of its value every year equal to 1800.0\n",
+            "The value of a motorbike costs £2000 and loses 10% of its value every year equal to 1620.0\n",
+            "The value of a motorbike costs £2000 and loses 10% of its value every year equal to 1458.0\n",
+            "The value of a motorbike costs £2000 and loses 10% of its value every year equal to 1312.2\n",
+            "The value of a motorbike costs £2000 and loses 10% of its value every year equal to 1180.98\n",
+            "The value of a motorbike costs £2000 and loses 10% of its value every year equal to 1062.882\n",
+            "The value of a motorbike costs £2000 and loses 10% of its value every year equal to 956.5938000000001\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Task 5\n",
+        "\n",
+        "Write a program which will ask for two numbers from a user. \n",
+        "\n",
+        "Then offer a menu to the user giving them a choice of operator:\n",
+        "\n",
+        "e.g. Enter “a” if you want to add “b” if you want to subtract\n",
+        "\n",
+        "Include +,--, /, *, ** square (to the power of). \n",
+        "\n",
+        "Once the user has selected which operator they wish to use, perform the calculation."
+      ],
+      "metadata": {
+        "id": "HFJy_QHojICY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "olCMYJOGKld3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 4\n",
+        "\n",
+        "user_input = input(\"What is your name? \")\n",
+        "name = user_input\n",
+        "print(\"Hello\", name + \"!\" , \"Please ask for two numbers?\")\n",
+        "\n",
+        "number_1 = int(input(\"\"))\n",
+        "number_2 = int(input(\"\"))\n",
+        "print(\"\") #space only\n",
+        "\n",
+        "print(\"Please choose a math operator:\")\n",
+        "print(\"+ : This is to add\")\n",
+        "print(\"- : This is to subtrack\")\n",
+        "print(\"* : This is to multiply\")\n",
+        "print(\"/ : This is to divide\")\n",
+        "print(\"//: This is to divide and show the integer value\")\n",
+        "print(\"% : This shows the remainder value\")\n",
+        "print(\"**: This will do a multiplication to the power of\")\n",
+        "print(\"\") #space only\n",
+        "\n",
+        "math_operator = input(\"\")\n",
+        "print(\"\") #space only\n",
+        "\n",
+        "if math_operator == \"+\":\n",
+        "  print(\"The calculation is:\", number_1 + number_2)\n",
+        "elif math_operator == \"-\":\n",
+        "  print(\"The calculation is:\", number_1 - number_2)\n",
+        "elif math_operator == \"*\":\n",
+        "  print(\"The calculation is:\", number_1 * number_2)\n",
+        "elif math_operator == \"/\":\n",
+        "  print(\"The calculation is:\", number_1 / number_2)\n",
+        "elif math_operator == \"//\":\n",
+        "  print(\"The calculation is:\", number_1 // number_2)\n",
+        "elif math_operator == \"%\":\n",
+        "  print(\"The calculation is:\", number_1 % number_2)\n",
+        "elif math_operator == \"**\":\n",
+        "  print(\"The calculation is:\", number_1 ** number_2)\n",
+        "else:\n",
+        "  print(\"Python can perform mathematical computations easily.\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "8j29AdQPjoer",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b0388afe-abd9-4988-a0ee-fdf426e28438"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your name? a\n",
+            "Hello a! Please ask for two numbers?\n",
+            "1\n",
+            "1\n",
+            "\n",
+            "Please choose a math operator:\n",
+            "+ : This is to add\n",
+            "- : This is to subtrack\n",
+            "* : This is to multiply\n",
+            "/ : This is to divide\n",
+            "//: This is to divide and show the integer value\n",
+            "% : This shows the remainder value\n",
+            "**: This will do a multiplication to the power of\n",
+            "\n",
+            "/\n",
+            "\n",
+            "The calculation is: 1.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
