@@ -165,9 +165,9 @@
         "\n",
         "e.g. Enter “a” if you want to add “b” if you want to subtract\n",
         "\n",
-        "Include +,--, /, *, ** square (to the power of).) \n",
+        "Include +,--, /, *, ** square (to the power of). \n",
         "\n",
-        "Once the user has selected which operator they wish to use, perform the calculation."
+        "Once the user has selected which operator they wish to use, perform the calculation.)"
       ],
       "metadata": {
         "id": "HFJy_QHojICY"
@@ -208,26 +208,19 @@
         "def math(math_operator):\n",
         "  \n",
         "  if math_operator == \"+\":\n",
-        "    output = print(\"The calculation is:\", number_1 + number_2)\n",
-        "    return output\n",
+        "    print(\"The calculation is:\", number_1 + number_2)    \n",
         "  elif math_operator == \"-\":\n",
-        "    output = print(\"The calculation is:\", number_1 - number_2)\n",
-        "    return output\n",
+        "    print(\"The calculation is:\", number_1 - number_2)\n",
         "  elif math_operator == \"*\":\n",
-        "    output = print(\"The calculation is:\", number_1 * number_2)\n",
-        "    return output\n",
+        "    print(\"The calculation is:\", number_1 * number_2)\n",
         "  elif math_operator == \"/\":\n",
-        "    output = print(\"The calculation is:\", number_1 / number_2)\n",
-        "    return output\n",
+        "    print(\"The calculation is:\", number_1 / number_2)\n",
         "  elif math_operator == \"//\":\n",
-        "    output = print(\"The calculation is:\", number_1 // number_2)\n",
-        "    return output\n",
+        "    print(\"The calculation is:\", number_1 // number_2)\n",
         "  elif math_operator == \"%\":\n",
-        "    output = print(\"The calculation is:\", number_1 % number_2)\n",
-        "    return output\n",
+        "    print(\"The calculation is:\", number_1 % number_2)\n",
         "  elif math_operator == \"**\":\n",
-        "    output = print(\"The calculation is:\", number_1 ** number_2)\n",
-        "    return output\n",
+        "    print(\"The calculation is:\", number_1 ** number_2)\n",
         "  else: #no choice of math_operator    \n",
         "    print(\"You have not typed a valid operator, please run the program again.\")\n",
         "    print(\"Python can perform mathematical computations easily.\")\n",
@@ -238,23 +231,23 @@
         "\n"
       ],
       "metadata": {
-        "id": "olCMYJOGKld3",
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "fd6a4290-6401-41a0-99a1-d6b98f4199b6"
+        "outputId": "3ee5fd2b-52db-4551-d663-beb70da338d2",
+        "id": "y-Cdcexgme1A"
       },
-      "execution_count": 50,
+      "execution_count": 8,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "What is your name? q\n",
-            "Hello q! Please ask for two numbers? \n",
+            "What is your name? a\n",
+            "Hello a! Please ask for two numbers? \n",
             "\n",
-            "1st number: 2\n",
-            "2nd number: 1\n",
+            "1st number: 1\n",
+            "2nd number: 2\n",
             "\n",
             " Please choose a math operator:\n",
             "+ : This is to add\n",
@@ -265,9 +258,10 @@
             "% : This shows the remainder value\n",
             "**: This will do a multiplication to the power of \n",
             "\n",
-            "operator is: //\n",
+            "operator is: \n",
             "\n",
-            "The calculation is: 2\n"
+            "You have not typed a valid operator, please run the program again.\n",
+            "Python can perform mathematical computations easily.\n"
           ]
         }
       ]
